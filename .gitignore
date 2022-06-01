@@ -1,3 +1,5 @@
 notes.md
 .venv
 node_modules
+backend/abbynormal/fixtures/nuforc_reports.json
+backend/abbynormal/fixtures/bfro_reports.json
