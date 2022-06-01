@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+#searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#unsplash {
+  display: flex;  
+  flex-wrap: wrap;
+  overflow: wrap;
+}
+
+#unsplash2 {
+  padding-inline: auto;  
+
+}
+
+
+#myimages, #imageedit {
+  display: flex;
+  height: 60vh;
+  width: 50vw;
+  justify-self: center;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "youMurderer";
+  color: whitesmoke;
+}
+
+title {
+  font-family: "youMurderer";
+}
+
+li {
+  list-style: none;
+}
+
+.btn-update, .btn-delete, .btn-copy, #searchButton {
+  background: transparent;
+  font-family: "youMurderer";
+  color:rgb(240, 240, 240);
+  border-radius: 50%;
+  font-size: larger;
+  
+}
+
+#login:hover, #logout:hover, #signup:hover, #home:hover, .checkin:hover {
+  color: #460707;
+}
+
+.btn-delete, #searchButton, .btn-copy {
+  font-size: 40px;
+}
+
+.btn-update:hover, .btn-delete:hover, .btn-copy:hover, #searchButton:hover {
+  background-color: red;
+}
+
+#welcome {
+  font-family: "youMurderer";
+  text-transform: capitalize;
+  margin: 0%;
+  color:rgba(207, 0, 15, 0.5);
+  font-size: 60px;
+}
+
+#viewstoryLink:hover {
+  color: rgb(66, 4, 4);
+}
+
+#app {
+  background: rgb(10,10,10);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(10,10,10,.6),rgba(0,0,0,.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
+  url("HomePage2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#wrapper {
+   text-align: center;
+   overflow-y: scroll;
+   overflow-x: scroll;
+
+}
+
+
+
+
+.sub {
+  color: red;
+  letter-spacing: 1em;
+  font-size: 30px;
+}
+
+// drip drip drop
+
+
+// .drop {
+//   position: relative;
+//     width: 20px;
+//     height: 20px;
+//   top: -30px;
+//   margin: 0 auto;
+//     background: red;
+//     -moz-border-radius: 20px;
+//     -webkit-border-radius: 20px;
+//     border-radius: 20px;
+//   -moz-animation-name: drip;
+//   -webkit-animation-name: drip;
+//   animation-name: drip;
+//   -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
+//   -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
+//   animation-timing-function: cubic-bezier(1,0,.91,.19);
+//   -moz-animation-duration: 2s;
+//   -webkit-animation-duration: 2s;
+//   animation-duration: 2s;
+//   -moz-animation-iteration-count: infinite;
+//   -webkit-animation-iteration-count: infinite;
+//   animation-iteration-count: infinite;
+// }
+
+// .drop:before {
+//   content: "";
+//   position: absolute;
+//   width: 0;
+//     height: 0;
+//     border-left: 10px solid transparent;
+//     border-right: 10px solid transparent;
+//     border-bottom: 30px solid red;
+//   top: -22px;
+//   left: 0%;
+// }
+
+// .wave {
+//   position: relative;
+//   opacity: 0;
+//   top: 0;
+//     width: 2px;
+//     height: 1px;
+//   border: red 7px solid;
+//     -moz-border-radius: 300px / 150px;
+//     -webkit-border-radius: 300px / 150px;
+//     border-radius: 300px / 150px;
+//   -moz-animation-name: ripple;
+//   -webkit-animation-name: ripple;
+//   animation-name: ripple;
+//   -moz-animation-delay: 2s;
+//   -webkit-animation-delay: 2s;
+//   animation-delay: 2s;
+//   -moz-animation-duration: 2s;
+//   -webkit-animation-duration: 2s;
+//   animation-duration: 2s;
+//   -moz-animation-iteration-count: infinite;
+//   -webkit-animation-iteration-count: infinite;
+//   animation-iteration-count: infinite;
+//   margin: 175px auto;
+// }
+
+// .wave:after {
+//   content: "";
+//   position: absolute;
+//   opacity: 0;
+//   top: -5px;
+//   left: -5px;
+//     width: 2px;
+//     height: 1px;
+//   border: red 5px solid;
+//     -moz-border-radius: 300px / 150px;
+//     -webkit-border-radius: 300px / 150px;
+//     border-radius: 300px / 150px;
+//   -moz-animation-name: ripple-2;
+//   -webkit-animation-name: ripple-2;
+//   animation-name: ripple-2;
+//   -moz-animation-duration: 2s;
+//   -webkit-animation-duration: 2s;
+//   animation-duration: 2s;
+//   -moz-animation-iteration-count: infinite;
+//   -webkit-animation-iteration-count: infinite;
+//   animation-iteration-count: infinite;
+//   margin: 175px auto;
+//   margin-top: 0px;
+// }
+
+// @keyframes ripple {
+//     from {
+//       opacity: 1;
+//     }
+//     to {
+//       width: 600px;
+//       height: 300px;
+//       border-width: 1px;
+//       top: -100px;
+//       opacity: 0;
+//     }
+// }
+
+// @keyframes ripple-2 {
+//     0% {
+//       opacity: 1;
+//     }
+//     50% {
+//       opacity: 0;
+//     }
+//   100% {
+//     width: 200px;
+//     height: 100px;
+//     border-width: 1px;
+//     top: 100px;
+//     left: 200px;
+//   }
+// }
+
+// @keyframes drip {
+//     to {
+//       top: 190px;
+//     }
+// }
+
+// Here's the meat and potatoes.
+
+/* Our mixin positions a copy of our text
+directly on our existing text, while
+also setting content to the appropriate
+text set in the data-text attribute. */
+
+@mixin glitchCopy { 
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch {
+  position: relative;
+  color: white;
+  font-size: 4em;
+  letter-spacing: .5em;
+  /* Animation provies a slight random skew. Check bottom of doc
+  for more information on how to random skew. */
+  animation: glitch-skew 1s infinite linear alternate-reverse;
+  
+  // Creates a copy before our text. 
+  &::before{
+    // Duplicates our text with the mixin.
+    @include glitchCopy;
+    // Scoots text slightly to the left for the color offset.
+    left: 2px;
+    // Creates the color 'shadow' that happens on the glitch.
+    text-shadow: -2px 0 #ff00c1;
+    /* Creates an initial clip for our glitch. This works in
+    a typical top,right,bottom,left fashion and creates a mask
+    to only show a certain part of the glitch at a time. */
+    clip: rect(44px, 450px, 56px, 0);
+    /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+    with an alternating animation to keep things fresh. */
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+  }
+  
+  // Creates a copy after our text. Note comments from ::before.
+  &::after {
+    @include glitchCopy;
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+  }
+}
+
+/* Creates an animation with 20 steaps. For each step, it calculates 
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+// Same deal, just duplicated for ultra randomness.
+@keyframes glitch-anim2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+      transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+// Does the same deal as before, but now only skews. Used for main text.
+@keyframes glitch-skew {
+  $steps: 10;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      transform: skew((random(10) - 5) + deg);
+    }
+  }
+}
+
+// This is for the stories 
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+$accent-color: red;
+
+// .imageSize {
+//   display: table-cell;
+//   height: 420px;
+//   width: 340px;
+  
+// }
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.day-card {
+  width: 60vw;
+  height: 50vh;
+  // width: 420px;
+  // height: 340px;
+  margin: 1em;
+  perspective: 1500px;
+  .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+  }
+}
+
+.more {
+  display: none;
+
+  &:checked ~ .content {
+    transform: rotateY(180deg);
+  }
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 6px;
+
+  .inner {
+    height: 100%;
+    display: grid;
+    padding: 1.5em;
+    transform: translateZ(80px) scale(0.94);
+  }
+}
+.story-title {
+  font-size: 50px;
+}
+.front {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center center;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 6px;
+    backface-visibility: hidden;
+    background: linear-gradient(
+      40deg,
+      rgba(207, 0, 15, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+  }
+  .inner {
+    grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
+    justify-items: center;
+  }
+
+  h2 {
+    grid-row: 2;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .rating {
+    grid-row: 3;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    display: flex;
+    flex-flow: row nowrap;
+    i {
+      margin: 0 1px;
+    }
+  }
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color:  rgba(0, 0, 0, 1);
+  // background-image: url('./HomePage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  .inner {
+    grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 0.8em;
+    justify-items: center;
+  }
+
+  .info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $accent-color;
+    grid-row: 3;
+    &:not(:first-of-type):before {
+      content: '';
+      position: absolute;
+      left: -0.9em;
+      height: 18px;
+      width: 1px;
+      background-color:  rgba(0, 0, 0, 0.1);
+    }
+    span {
+      font-size: 2em;
+      font-weight: 700;
+    }
+    i {
+      &:before {
+        background: linear-gradient(40deg, $accent-color, rgb(67, 138, 243));
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+      font-size: 1.2em;
+    }
+    .icon {
+      margin-left: 0.3em;
+      span {
+        display: block;
+        margin-top: -0.25em;
+        font-size: 0.8em;
+        font-weight: 600;
+                white-space: nowrap;
+                
+      }
+    }
+  }
+
+ 
+
+  .description {
+    grid-row: 5;
+    grid-column: 1/-1;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    line-height: 1.4em;
+    overflow: auto;
+    color: $accent-color;
+    padding-right: 10px;
+  }
+
+  .location,
+  .price {
+    font-weight: 600;
+    color: $accent-color;
+    grid-row: 1;
+    font-size: 0.86em;
+  }
+
+  .location {
+    grid-column: 1/3;
+    justify-self: left;
+  }
+
+  .price {
+    grid-column: 3/-1;
+    justify-self: right;
+  }
+
+  .button {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}
+
+.button {
+  grid-row: -1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  padding: 0 1.5em;
+  height: 3em;
+  line-height: 2.9em;
+  min-width: 3em;
+  background-color: transparent;
+  border: solid 2px #fff;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  left: 50%;
+  backface-visibility: hidden;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+    color: $accent-color;
+  }
+
+  &.return {
+    line-height: 4em;
+    color: $accent-color;
+    border-color: $accent-color;
+    text-shadow: none;
+    &:hover {
+      background-color: $accent-color;
+      color: #fff;
+      box-shadow: none;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  color: transparent;
+  
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+
+
+
+
+
+
+// ORIGINAL CSS FILE
+
+// .App {
+//   text-align: center;
+// }
+
+#row {
+  display: flex;
+  width: 60vw;
+  height: 50vh;
+  text-align: left;
+  color: red;
+  font-family: "youMurderer";
+  font-size: xx-large;
+  background-color: transparent; 
+}
+
+input, #textbox {
+  display: flex;
+  width: 50vw;
+  height: 5vh;
+  text-align: left;
+  color: red;
+  font-family: "youMurderer";
+  font-size: xx-large;
+  background-color: transparent; 
+}
+
+
+#textbox {
+  resize: vertical;  
+  
+}
+
+#postme {
+  background-color: rgb(66, 4, 4);
+  padding: 2rem;
+  color: #fff;
+  font-family: "youMurderer";
+  font-size: 30px;
+}
+
+#postme:hover {
+  background-color: #333333;
+  color:rgb(66, 4, 4)
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: wavy;
+  font-family: "youMurderer";
+  font-size: 2rem;
+}
+
+a:hover {
+  color:rgb(66, 4, 4);
+}
+
+#credit {
+  align-self: flex-end;
+  padding-right: 2rem;
+  text-align: right;
+  font-size: small;
+  color: red;
+  font-family: "youMurderer"
+
+// html {
+//   display: flexbox;
+//   background-image: url("HomePage.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+
+p {
+  color: red;
+  font-family: "youMurderer";
+  font-size: larger;
+}
+
+a:hover {
+  color: #CC00C0;
+  text-decoration: none;
+}
+
+button {
+  color: white;
+  background-color: #333333;
+  border-radius: 10%;
+}
+
+button:hover {
+  color: #DDFF00;
+  background-color: #222222;
+}
+
+// #header {
+//   display: flex;
+//   font-family: 'Hanalei Fill', cursive;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   background: linear-gradient(to bottom, #610303, #806464);
+//   height: 100px;
+// }
+
+// #header-title {
+//   display: flex;
+//   align-items: center;
+//   height: 100%;
+//   font-family: 'Hanalei Fill', cursive;
+// }
+
+// #header h1 {
+//   font-size: 40px;
+//   font-weight: 700;
+//   margin: 0px;
+// }
+
+// #header-menu {
+//   font-weight: 500;
+//   bottom: 0;
+//   width: auto;
+//   padding: 4px;
+//   font-size: 12px;
+// }
+
+// .row {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .panel {
+//   background-color: #EEEEEE;
+//   padding: 8px;
+// }
+
+// .btn-delete {
+//   background-color: red;
+//   border: #AA0000 2px solid;
+//   border-radius: 40%;
+//   font-size: 10px;
+//   font-weight: 900;
+//   font-family: 'Courier New', Courier, monospace;
+//   padding: 1px 4px;
+// }
+
+// .btn-delete:hover {
+//   cursor: pointer;
+//   background-color: #FF8888;
+//   border: red 2px solid;
+//   border: #440000 2 px solid;
+//   border-radius: 40%;
+// }
+
+}
