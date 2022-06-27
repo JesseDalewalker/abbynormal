@@ -2,6 +2,8 @@
 
 Here is a video from my personal project from 5:09-14:47 if you are interested called, Abby Normal: https://youtu.be/N_isbF5obA0?t=307
 
+This is my first project which encompasses the full stack with React.js, Django, PostgreSQL, SASS, HTML, CSS, Javascript, Python, CRUD, and API's. I hope you enjoy this project as much as it was fun making it.
+
 ## Table of Contents
 * [Backend Setup](https://github.com/dragoneye888/abbynormal#backend-setup)
 * [Frontend Setup](https://github.com/dragoneye888/abbynormal#frontend-setup)
