@@ -54,6 +54,11 @@ and pick the approprriate one for your device.
 - Then install the common client
 $ sudo apt install postgresql-client-common
 
+#Using WSL and getting an error? 
+Go to this link: https://www.codegrepper.com/code-examples/shell/Error%3A+You+must+install+at+least+one+postgresql-client-%3Cversion%3E+package
+AND 
+Go to this link to setup your postgres user: https://www.postgresql.org/docs/13/tutorial-createdb.html
+
 - You should now be able to create a database
 $ createdb abbynormal_db
 ```
