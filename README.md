@@ -48,7 +48,9 @@ $ python -c 'from django.core.management.utils import get_random_secret_key; pri
 
 6. Create the database (Postgresql)
 ```
-$ createdb group_proj_db
+* Ensure you have PostgreSQL downloaded if not use:
+$ sudo apt install postgresql-client-common
+$ createdb abbynormal_db
 ```
 - If you get an error like this: `Is the server running locally and accepting connections on that socket?` Run this command:
 ```
