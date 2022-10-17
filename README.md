@@ -48,8 +48,13 @@ $ python -c 'from django.core.management.utils import get_random_secret_key; pri
 
 6. Create the database (Postgresql)
 ```
-* Ensure you have PostgreSQL downloaded-- if not use:
+- Ensure you have PostgreSQL downloaded-- if not download the installer here: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+and pick the approprriate one for your device.
+
+- Then install the common client
 $ sudo apt install postgresql-client-common
+
+- You should now be able to create a database
 $ createdb abbynormal_db
 ```
 - If you get an error like this: `Is the server running locally and accepting connections on that socket?` Run this command:
