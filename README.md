@@ -34,7 +34,7 @@ $ source .venv/bin/activate
 $ cd abbynormal/
 $ pip install -r requirements.txt
 ```
-
+## Be advised, ensure Python and PiP are updated
 - #### Mac
 ```
 $ pip3 install -r requirements.txt
