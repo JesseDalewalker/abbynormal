@@ -5,9 +5,9 @@ Here is a video from my personal project from 5:09-14:47 if you are interested c
 This is my first project which encompasses the full stack with React.js, Django, PostgreSQL, SASS, HTML, CSS, Javascript, Python, CRUD, and API's. I hope you enjoy this project as much as it was fun making it.
 
 ## Table of Contents
-* [Backend Setup](https://github.com/dragoneye888/abbynormal#backend-setup)
-* [Frontend Setup](https://github.com/dragoneye888/abbynormal#frontend-setup)
-* [Git Workflow](https://github.com/dragoneye888/abbynormal#git-workflow)
+* [Backend Setup](https://github.com/JesseDalewalker/abbynormal#backend-setup)
+* [Frontend Setup](https://github.com/JesseDalewalker/abbynormal#frontend-setup)
+* [Git Workflow](https://github.com/JesseDalewalker/abbynormal#git-workflow)
 
 ## Getting Started: Installing The Project
 
@@ -15,7 +15,7 @@ This is my first project which encompasses the full stack with React.js, Django,
 
 1. Make sure to clone this repo into your local machine! (No need to fork)
 ```
-$ git clone https://github.com/dragoneye888/abbynormal.git
+$ git clone https://github.com/JesseDalewalker/abbynormal.git
 ```
 
 2. Create a virtual environment
@@ -125,4 +125,4 @@ $ git merge <branch-name>
 7. Submit a pull request. GitHub will notify you if there are any conflicts you need to resolve within the files before being able to merge the changes.
 - If there are any issues, run `$ git status` to pinpoint their location.
 
-[Back to top](https://github.com/dragoneye888/abbynormal#abbynormal)
+[Back to top](https://github.com/JesseDalewalker/abbynormal#abbynormal)
