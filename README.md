@@ -31,6 +31,7 @@ $ source .venv/bin/activate
 4. Install requirements.txt
 - #### Windows/Linux
 ```
+$ cd abbynormal/
 $ pip install -r requirements.txt
 ```
 
